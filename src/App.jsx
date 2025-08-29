@@ -53,7 +53,7 @@ function App() {
   
   return (
     <main style={{ padding: 24, maxWidth: 560, margin: "0 auto" }}>
-      <Hello name="ToDo" />
+      <Hello name="ToDo App" />
       <TodoInput onAdd={addTodo} />
       <Filters value={filter} onChange={setFilter} onClearCompleted={clearCompleted} />
       <TodoList items={visibleTodos} onToggle={toggleTodo} onRemove={removeTodo} />

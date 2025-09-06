@@ -4,6 +4,7 @@ import Hello from './components/Hello'
 import TodoInput from './components/TodoInput'
 import TodoList from './components/TodoList'
 import Filters from './components/Filters'
+import Timer from './components/Timer'
 
 const STORAGE_KEY = "todos.v1";
 
@@ -60,6 +61,7 @@ function App() {
       <p style={{ opacity: 0.6, marginTop: 12 }}>
         {todos.filter(t => !t.completed).length} remaining
       </p>
+      <Timer/>
     </main>
   );
 }
